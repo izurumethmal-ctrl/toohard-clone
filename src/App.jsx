@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar"; // 👈 HERE (top of file)
+import Navbar from "./Components/Navbar"; // Components folder assumed correct
 
-import Home from "./Pages/Home";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
@@ -9,8 +9,8 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <BrowserRouter>
-      <Navbar /> {/* 👈 Navbar placed here */}
-      
+      <Navbar /> {/* Navbar placed here */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
